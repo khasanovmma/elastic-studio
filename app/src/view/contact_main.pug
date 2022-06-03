@@ -1,0 +1,31 @@
+main.contact__main.main.container
+    .main__left
+        img.main__left-img(src="images/bgk.webp", alt="elastic_studio")
+        .main__left_icons
+            a(href="#!").main__left_icons-link
+                img.main__left_icons-img(src='./images/be.svg' alt='be')
+            a(href="#!").main__left_icons-link
+                img.main__left_icons-img(src='./images/facebook.svg' alt='facebook')
+            a(href="#!").main__left_icons-link
+                img.main__left_icons-img(src='./images/instagram.svg' alt='instagram')
+    .main__right
+        h3.main__right-title Contact-us
+        form.main__form
+            lable(for="name").main__form-title Name
+            input.main__form-input(type="text", required, id="name", placeholder="Enter your name") 
+            lable(for="email").main__form-title Email Address
+            input.main__form-input(type="email", required, id="email", placeholder="Enter your email adderss") 
+            lable(for="massage").main__form-title Message
+            textarea.main__form-textarea(id="massage", placeholder="Enter your message here")
+            .main__send
+                p.main__form-desc   We will get back to you within 
+                                    |one business day
+                a.main__form-btn(href="#!") Submit
+        .main__info
+            a(href="tel:(234) 305-738-8420").main__info-inner (234) 305-738-8420
+                img.main__info-icon(src="./images/phone.svg", alt="telnumber")
+            a(href="#!").main__info-inner 128 Steve Hunt Road, Florida
+                img.main__info-icon(src="./images/flag.svg", alt="map")
+            a(href="mailto:info@elastic-studio.com").main__info-inner info@elastic-studio.com
+                img.main__info-icon(src="./images/email.svg", alt="email")
+            

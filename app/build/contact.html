@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./styles/main.min.css"/>
+    <title>Contact</title>
+  </head>
+  <body class="contact__body">
+    <header class="header">
+      <nav class="header__nav container"><a href=""><img src="images/logo.webp" alt="logo"/></a>
+        <div class="header__nav_menu">
+          <div class="header__nav-burger"><span class="header__nav-line"></span><span class="header__nav-line"></span><span class="header__nav-line"></span></div>
+          <ul class="header__nav-list">
+            <li><a class="header__nav-link" href="./index.html">Home </a></li>
+            <li><a class="header__nav-link" href="./book.html">Book</a></li>
+            <li><a class="header__nav-link" href="./contact.html">Contact</a></li>
+            <li><a class="header__nav-link" href="./about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="contact__main main container">
+      <div class="main__left"><img class="main__left-img" src="images/bgk.webp" alt="elastic_studio"/>
+        <div class="main__left_icons"><a class="main__left_icons-link" href="#!"><img class="main__left_icons-img" src="./images/be.svg" alt="be"/></a><a class="main__left_icons-link" href="#!"><img class="main__left_icons-img" src="./images/facebook.svg" alt="facebook"/></a><a class="main__left_icons-link" href="#!"><img class="main__left_icons-img" src="./images/instagram.svg" alt="instagram"/></a></div>
+      </div>
+      <div class="main__right">
+        <h3 class="main__right-title">Contact-us</h3>
+        <form class="main__form">
+          <lable class="main__form-title" for="name">Name</lable>
+          <input class="main__form-input" type="text" required="required" id="name" placeholder="Enter your name"/>
+          <lable class="main__form-title" for="email">Email Address</lable>
+          <input class="main__form-input" type="email" required="required" id="email" placeholder="Enter your email adderss"/>
+          <lable class="main__form-title" for="massage">Message</lable>
+          <textarea class="main__form-textarea" id="massage" placeholder="Enter your message here"></textarea>
+          <div class="main__send">
+            <p class="main__form-desc">
+                We will get back to you within one business day</p><a class="main__form-btn" href="#!">Submit</a>
+          </div>
+        </form>
+        <div class="main__info"><a class="main__info-inner" href="tel:(234) 305-738-8420">(234) 305-738-8420<img class="main__info-icon" src="./images/phone.svg" alt="telnumber"/></a><a class="main__info-inner" href="#!">128 Steve Hunt Road, Florida<img class="main__info-icon" src="./images/flag.svg" alt="map"/></a><a class="main__info-inner" href="mailto:info@elastic-studio.com">info@elastic-studio.com<img class="main__info-icon" src="./images/email.svg" alt="email"/></a></div>
+      </div>
+    </main>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

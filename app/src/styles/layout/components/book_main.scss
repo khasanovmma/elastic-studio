@@ -1,0 +1,352 @@
+.book__main {
+    padding-top: 150px;
+    padding-bottom: 190px;
+
+    @media (max-width: 770px) {
+        & {
+            padding-bottom: 80px;
+        }
+    }
+}
+
+.main {
+    &__about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-title {
+            font-family: 'OpenSans';
+            text-align: center;
+            font-weight: 600;
+            font-size: 36px;
+            line-height: 49px;
+        }
+
+        &-desc {
+            font-family: 'OpenSans';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 33px;
+
+            @media (max-width: 770px) {
+                text-align: center;
+
+            }
+        }
+    }
+
+    &__book {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        &-title {
+            text-align: center;
+            font-family: 'OpenSans';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        &-desc {
+            font-family: 'OpenSans';
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 19px;
+        }
+
+        &_choose {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &-btn {
+                display: inline-block;
+                margin: 10px 15px;
+                padding: 9px 48px;
+                font-family: 'OpenSans';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                color: #000;
+                border: 1px solid var(--yellow);
+                border-radius: 5px;
+            }
+
+            &-btn.active {
+                color: var(--white);
+                background: var(--yellow);
+            }
+        }
+    }
+
+    &__order {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 30px;
+
+        &-title {
+            text-align: center;
+            font-family: 'OpenSans';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        &_info {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 30px;
+
+            &-input {
+                max-width: 340px;
+                width: 100%;
+                padding: 16px;
+                border: 2px solid var(--yellow);
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--blackTransparent);
+            }
+
+            &-input:focus~.span_focus {
+                opacity: 1;
+            }
+
+
+            @media (max-width: 1240px) {
+                & {
+                    flex-direction: column;
+                    align-items: center;
+
+                    &-input {
+                        max-width: 540px;
+                        margin: 15px 0;
+                    }
+
+                }
+            }
+
+
+        }
+
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        &-title {
+            text-align: center;
+            font-family: 'OpenSans';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        &_fill {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 30px;
+
+            &-input {
+                max-width: 340px;
+                width: 100%;
+                padding: 16px;
+                border: 2px solid var(--yellow);
+                font-family: 'Roboto';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                color: var(--blackTransparent);
+                outline: none;
+            }
+
+            &-input:focus~.span_focus {
+                opacity: 1;
+            }
+
+            @media (max-width: 1240px) {
+                & {
+                    flex-direction: column;
+                    align-items: center;
+
+                    &-input {
+                        max-width: 540px;
+                        margin: 15px 0;
+                    }
+
+                }
+            }
+        }
+
+
+    }
+
+    &__btn {
+        margin-top: 120px;
+        display: flex;
+        justify-content: center;
+
+        &-inner {
+            padding: 18px 50px;
+            color: var(--yellow);
+            font-family: 'OpenSans';
+            border: 2px solid var(--yellow);
+            box-sizing: border-box;
+            border-radius: 56px;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 41px;
+        }
+
+        &-inner:first-child {
+            margin-right: 30px;
+        }
+
+        @media (max-width: 770px) {
+            & {
+                flex-direction: column;
+                align-items: center;
+
+                &-inner:first-child {
+                    margin-bottom: 25px;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        @media (max-width: 765px) {
+            &-inner {
+                padding: 15px 24px;
+                font-size: 22px;
+                line-height: 22px;
+            }
+        }
+
+    }
+
+    .select {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+
+        &-title {
+            text-align: center;
+            font-family: 'OpenSans';
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 33px;
+        }
+
+        &__cards {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 955px;
+            width: 100%;
+            margin-top: 30px;
+
+            &_card {
+                max-width: 270px;
+                width: 100%;
+                height: 300px;
+                padding: 30px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                border: 1px solid #000;
+
+                &-info {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+
+            }
+
+            &-title {
+                font-family: 'OpenSans';
+                font-weight: 600;
+                font-size: 21px;
+                line-height: 29px;
+            }
+
+            &-cost {
+                font-family: 'OpenSans';
+                font-weight: 600;
+                font-size: 30px;
+                line-height: 41px;
+            }
+
+            &-desc {
+                font-family: 'OpenSans';
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            &-btn {
+                width: 105px;
+                height: 45px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'OpenSans';
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 25px;
+                border: 1px solid var(--yellow);
+                border-radius: 5px;
+                color: #000;
+
+            }
+
+            &-btn.active {
+                color: var(--white);
+                background: var(--yellow);
+            }
+
+            @media (max-width: 1240px) {
+                & {
+                    flex-direction: column;
+                    align-items: center;
+
+                    &_card:nth-child(2) {
+                        margin: 25px 0;
+                    }
+                }
+
+            }
+        }
+    }
+
+}
+
+.input_focus {
+    position: relative;
+    width: 100%;
+}
+
+.span_focus {
+    position: absolute;
+    top: -9px;
+    left: 15px;
+    background-color: var(--white);
+    opacity: 0;
+
+    @media (max-width: 1240px) {
+        & {
+        top: 5px;
+     }
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles/main.min.css"/>
+    <title>Book</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav container"><a href=""><img src="images/logo.webp" alt="logo"/></a>
+        <div class="header__nav_menu">
+          <div class="header__nav-burger"><span class="header__nav-line"></span><span class="header__nav-line"></span><span class="header__nav-line"></span></div>
+          <ul class="header__nav-list">
+            <li><a class="header__nav-link" href="./index.html">Home </a></li>
+            <li><a class="header__nav-link" href="./book.html">Book</a></li>
+            <li><a class="header__nav-link" href="./contact.html">Contact</a></li>
+            <li><a class="header__nav-link" href="./about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="book__main main">
+      <div class="main__about container">
+        <h2 class="main__about-title">Welcome to the booking page!</h2>
+        <p class="main__about-desc">Kindly provide necessary informations by attending to the questions below.</p>
+      </div>
+      <div class="main__book container">
+        <h3 class="main__book-title">When and where is the photoshoot?</h3>
+        <p class="main__book-desc">(you can select multiple options)</p>
+        <div class="main__book_choose"><a class="main__book_choose-btn" href="#!">Engagement</a><a class="main__book_choose-btn" href="#!">Business event</a><a class="main__book_choose-btn" href="#!">Wedding</a><a class="main__book_choose-btn" href="#!">Birthday</a><a class="main__book_choose-btn" href="#!">Maternity</a><a class="main__book_choose-btn" href="#!">Graduation</a><a class="main__book_choose-btn" href="#!">Product</a><a class="main__book_choose-btn" href="#!">Honeymoon</a><a class="main__book_choose-btn" href="#!">Fashion</a><a class="main__book_choose-btn" href="#!">Anniversary</a><a class="main__book_choose-btn" href="#!">Food</a><a class="main__book_choose-btn" href="#!">Conference</a><a class="main__book_choose-btn" href="#!">Team and workspace</a><a class="main__book_choose-btn" href="#!">Personal Potrait</a><a class="main__book_choose-btn" href="#!">Family</a><a class="main__book_choose-btn" href="#!">Travel shoot</a><a class="main__book_choose-btn" href="#!">Baby</a><a class="main__book_choose-btn" href="#!">Others</a>
+        </div>
+      </div>
+      <div class="main__order container">
+        <h3 class="main__order-title">When and where is the photoshoot?</h3>
+        <div class="main__order_info">
+          <div class="input_focus">
+            <input class="main__order_info-input" type="text" placeholder="Select date"/><span class="span_focus">Date</span>
+          </div>
+          <div class="input_focus"> 
+            <input class="main__order_info-input" type="text" placeholder="Select time"/><span class="span_focus">Time</span>
+          </div>
+          <div class="input_focus"> 
+            <input class="main__order_info-input" type="text" placeholder="Enter the location address"/><span class="span_focus">Address</span>
+          </div>
+        </div>
+      </div>
+      <div class="select container">
+        <h3 class="select-title">Select your preffered package</h3>
+        <div class="select__cards">
+          <div class="select__cards_card">
+            <div class="select__cards_card-info">  
+              <h4 class="select__cards-title">Basic</h4><span class="select__cards-cost"> &#8358; 30,000</span>
+              <p class="select__cards-desc">1 hour shoot</p>
+              <p class="select__cards-desc">Unlimited photos</p>
+              <p class="select__cards-desc">Editing included</p>
+            </div><a class="select__cards-btn" href="#!">Select</a>
+          </div>
+          <div class="select__cards_card">
+            <div class="select__cards_card-info">
+              <h4 class="select__cards-title">Standard</h4><span class="select__cards-cost"> &#8358; 50,000</span>
+              <p class="select__cards-desc">2 hour shoot</p>
+              <p class="select__cards-desc">Unlimited photos</p>
+              <p class="select__cards-desc">Editing included</p>
+            </div><a class="select__cards-btn" href="#!">Select</a>
+          </div>
+          <div class="select__cards_card">
+            <div class="select__cards_card-info">
+              <h4 class="select__cards-title">Premium</h4><span class="select__cards-cost"> &#8358; 80,000</span>
+              <p class="select__cards-desc">2 hour shoot</p>
+              <p class="select__cards-desc">Unlimited photos</p>
+              <p class="select__cards-desc">Editing included</p>
+              <p class="select__cards-desc">Free photobook</p>
+            </div><a class="select__cards-btn" href="#!">Select</a>
+          </div>
+        </div>
+      </div>
+      <div class="main__details container">
+        <div class="main__details-title">Kindly provide your contact details</div>
+        <div class="main__details_fill">
+          <div class="input_focus">
+            <input class="main__details_fill-input" text="text" placeholder="Enter full name"/><span class="span_focus">Name    </span>
+          </div>
+          <div class="input_focus">
+            <input class="main__details_fill-input" text="text" placeholder="Enter phone number"/><span class="span_focus">Phone  </span>
+          </div>
+          <div class="input_focus">
+            <input class="main__details_fill-input" text="text" placeholder="Enter email adderss"/><span class="span_focus">Address   </span>
+          </div>
+        </div>
+      </div>
+      <div class="main__btn container"><a class="main__btn-inner" href="#!">Book now</a><a class="main__btn-inner" href="#!">Save and book later</a></div>
+    </main>
+    <script src="./js/common.js"></script>
+  </body>
+</html>

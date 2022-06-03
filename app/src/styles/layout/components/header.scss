@@ -1,0 +1,114 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: var(--black);
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+
+        &_menu {
+            display: flex;
+        }
+
+        &-list {
+            display: flex;
+
+            @media (max-width: 768px) {
+                & {
+                    width: 50%;
+                    height: 100vh;
+                    flex-direction: column;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    background-color: var(--black);
+                    transform: translateX(380px);
+                    transition: all .5s;
+                }
+                &.active {
+                    transform: none;
+                }
+            }
+        }
+
+        &-burger {
+            width: 35px;
+            height: 30px;
+            cursor: pointer;
+            display: none;
+            flex-direction: column;
+            justify-content: space-around;
+            z-index: 999;
+            @media (max-width: 768px) {
+                display: flex;
+            }
+        }
+
+        &-line {
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            transition: all .8s;
+        }
+
+        &-line:nth-child(1).active {
+            transform: rotateZ(-45deg) translate(-8px, 6px);
+        }
+
+        &-line:nth-child(2).active {
+            opacity: 0;
+        }
+
+        &-line:nth-child(3).active {
+            transform: rotateZ(45deg) translate(-8px, -6px);
+        }
+
+        &-link {
+            margin-left: 50px;
+            font-family: 'OpenSans';
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 25px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            @media (max-width: 768px) {
+                & {
+                    font-size: 25px;
+                    line-height: 50px;
+                    margin: 0;
+                }
+            }
+        }
+
+        &-link.active::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--yellow);
+
+            @media (max-width: 768px) {
+                & {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        &-link.active {
+            color: var(--yellow);
+        }
+
+    }
+
+
+
+
+}

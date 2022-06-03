@@ -1,0 +1,56 @@
+main.index__main
+    .slide
+        .slide__content.top
+            .slide__content__icons
+                a.slide__content__icons-icon(href='№')
+                     img(src='./images/be.svg' alt='be')
+                a.slide__content__icons-icon(href='№')
+                     img(src='./images/facebook.svg' alt='facebook')
+                a.slide__content__icons-icon(href='№')
+                     img(src='./images/instagram.svg' alt='instagram')
+            .slide__content-desc.top
+            a.slide__content-btn.top(href='./book.html')
+        .slide__img-left
+        .slide__img-right
+    - for (var i = 0; i < 9; i++)
+        .slide
+            if i % 2 == 0 
+                .slide__content.left
+                    h3.slide__content-title.left
+                    .slide__content-desc.left
+                    a.slide__content-btn.other(href='#!')
+                .slide__img-left
+                .slide__img-right
+                .gradient
+                .border
+            else
+                .slide__content.right
+                    h3.slide__content-title.right
+                    .slide__content-desc.right
+                    a.slide__content-btn.other(href='#!')
+                .slide__img-left
+                .slide__img-right
+                .gradient
+                .border
+    .slide
+        .slide__content.bottom
+            .slide__projects
+                .slide__project
+                    span.slide__project-num
+                    p.slide__project-desc
+                .slide__project
+                    span.slide__project-num
+                    p.slide__project-desc
+                .slide__project
+                    span.slide__project-num
+                    p.slide__project-desc
+            a.slide__content-btn.bottom(href='#!')
+    .slide__btns
+        ul.slide__dots
+            - for (var i = 0; i<11; i++)
+                if i == 0
+                    li
+                        a.dot.active(href="#!")
+                else        
+                    li
+                        a.dot(href="#!")

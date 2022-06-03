@@ -1,0 +1,65 @@
+main.book__main.main
+    .main__about.container
+        h2.main__about-title Welcome to the booking page!
+        p.main__about-desc Kindly provide necessary informations by attending to the questions below.
+    .main__book.container
+        h3.main__book-title When and where is the photoshoot?
+        p.main__book-desc (you can select multiple options)
+        .main__book_choose
+            each val in ['Engagement', 'Business event', 'Wedding', 'Birthday', 'Maternity', 'Graduation', 'Product', 'Honeymoon', 'Fashion', 'Anniversary', 'Food', 'Conference', 'Team and workspace', 'Personal Potrait', 'Family', 'Travel shoot', 'Baby', 'Others']
+                a.main__book_choose-btn(href="#!")= val
+    .main__order.container
+        h3.main__order-title When and where is the photoshoot?
+        .main__order_info
+            .input_focus
+                input.main__order_info-input(type="text" placeholder="Select date")
+                span.span_focus Date
+            .input_focus 
+                input.main__order_info-input(type="text" placeholder="Select time")
+                span.span_focus Time
+            .input_focus 
+                input.main__order_info-input(type="text" placeholder="Enter the location address")
+                span.span_focus Address
+    .select.container
+        h3.select-title Select your preffered package
+        .select__cards
+            .select__cards_card
+                .select__cards_card-info   
+                    h4.select__cards-title Basic
+                    span.select__cards-cost  &#8358; 30,000
+                    p.select__cards-desc 1 hour shoot
+                    p.select__cards-desc Unlimited photos
+                    p.select__cards-desc Editing included
+                a(href="#!").select__cards-btn Select
+            .select__cards_card
+                .select__cards_card-info
+                    h4.select__cards-title Standard
+                    span.select__cards-cost  &#8358; 50,000
+                    p.select__cards-desc 2 hour shoot
+                    p.select__cards-desc Unlimited photos
+                    p.select__cards-desc Editing included
+                a(href="#!").select__cards-btn Select
+            .select__cards_card
+                .select__cards_card-info
+                    h4.select__cards-title Premium
+                    span.select__cards-cost  &#8358; 80,000
+                    p.select__cards-desc 2 hour shoot
+                    p.select__cards-desc Unlimited photos
+                    p.select__cards-desc Editing included
+                    p.select__cards-desc Free photobook
+                a(href="#!").select__cards-btn Select
+    .main__details.container
+        .main__details-title Kindly provide your contact details
+        .main__details_fill
+            .input_focus
+                input.main__details_fill-input(text="text", placeholder="Enter full name")
+                span.span_focus Name    
+            .input_focus
+                input.main__details_fill-input(text="text", placeholder="Enter phone number")
+                span.span_focus Phone  
+            .input_focus
+                input.main__details_fill-input(text="text", placeholder="Enter email adderss")
+                span.span_focus Address   
+    .main__btn.container
+        a.main__btn-inner(href="#!") Book now
+        a.main__btn-inner(href="#!") Save and book later
